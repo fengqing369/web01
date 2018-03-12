@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- user-scalable 是否允许用户缩放
+      经过我在ios10和safari的测试,在ios10以上的系统 user-scalable不起作用
+
+      yes代表允许缩放 no不允许缩放
+
+      如果开发的是移动app,一般给no
+      如果开发的是移动端页面,一般给yes
+
+      但是最终由产品决定
+
+
+      视口设置中的高度一般不设置
+  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+  
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .box {
+      width: 375px;
+      height: 200px;
+      background-color: blue;
+      text-align: center;
+      line-height: 200px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">8</div>
+</body>
+
+</html>

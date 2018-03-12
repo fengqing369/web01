@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>百分比单位的相对性</title>
+  <style>
+    .outer {
+      width: 500px;
+      height: 600px;
+      background-color: pink;
+    }
+
+    .inner {
+      /* 50px */
+      width: 10%;
+      /* 60px */
+      height: 10%;
+      
+      /* padding相对的宽度 */
+      /* 100 */
+      /* padding-left: 20%; */
+      /* 150 */
+      /* padding-top: 30%; */
+      /* 200 */
+      /* padding-bottom: 40%; */
+      /* 250 */
+      /* padding-right: 50%; */
+
+      /* margin的相对性还是宽 */
+      margin-left: 10%;
+      margin-bottom: 20%;
+
+      /*  border  border不能写%*/
+      /* border: 10% solid #ccc; */
+
+      background-color: hotpink;
+    }
+  </style>
+</head>
+<body>
+  <div class="outer">
+    <div class="inner"></div>
+  </div>
+</body>
+</html>

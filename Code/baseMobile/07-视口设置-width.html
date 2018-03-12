@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- 设置视口的宽度 -->
+  <!-- 设置视口用的是meta标签
+        name属性的值固定就是viewport
+
+        为什么大家说width=device-width
+
+        content中设置的是视口的各种项
+
+        现在我们设置的视口的宽度 是设备宽度
+
+        我们还可以设置具体的数值
+  -->
+  <meta name="viewport" content="width=600">
+  <!-- meta:vp 和编辑器有关系  emmet语法 -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    .box {
+      width: 375px;
+      height: 200px;
+      background-color: blue;
+      text-align: center;
+      line-height: 200px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">8</div>
+  <script>
+    document.querySelector(".box").innerHTML =window.getComputedStyle(document.querySelector('html'),null).width+"====="+window.getComputedStyle(document.querySelector('html'),null).height;
+  </script>
+</body>
+
+</html>

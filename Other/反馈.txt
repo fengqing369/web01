@@ -1,0 +1,29 @@
+老师,我的问题比较多,多的我脑子实在有点绕不过来,请见谅,
+  1.other文件夹下有个圆弧度数图,里面公式 弧度=度数*Math.PI/180,但是<绘制圆弧.html>里面context.arc()这个方法里面第5个参数"终止弧度"为什么写的是0.5*Math.PI而不是0.5*Math.PI/180
+
+    1 弧度 = 360 / 2 π = 180 / π
+
+  2.非零环绕原则是什么意思呢?
+
+    来确定一个闭合图像是否填充的一个规则
+
+  3.关于渐变,linearGradient.addColorStop(起始位置,颜色)和linearGradient.addColorStop(终点,颜色) 起点和终点的方法是一样的,不明白为什么一个是0,一个是1,可不可以理解为起点终点的范围是0-1?
+
+      css3 :linearGradient(方向,red 100px,green 200px)
+
+      div的宽度是300 
+
+  4.绘制扇形里面这个画圆弧终止弧度那块,还是想不明白,但是背公式背过来了,context.arc(canvas.width/2,canvas.height/2,150,startAngle,startAngle+(item/sum*Math.PI*2));希望老师在讲讲最后这个参数
+
+  5.饼状图,拐点X坐标不太明白,还有后面比例尺那块不太明白,文字在小方块后面,为什么不加
+    context.beginPath();
+      为什么要加beginPath(); 必要性: 样式(状态)不一样 是一定要加的
+
+      
+
+
+
+求拐点坐标不是很动,希望老师再讲讲
+
+
+
